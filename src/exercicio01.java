@@ -4,7 +4,8 @@ public class exercicio01 {
     
     public static void main(String[] args) {
         
-        int[][] interview = new int [10000][3];
+        int origin = 0, destin = 0, vehicle = 0;
+
         int i = 0, answer1 = 0, answer2 = 0, answer3 = 0, countBH = 0, countBrasPetr = 0;
         int loop = 1;
         
@@ -18,11 +19,7 @@ public class exercicio01 {
             System.out.println("3. Vitória");
             System.out.println("4. Brasília");
             System.out.print(": ");
-            answer1 = Integer.parseInt(sc.nextLine());
-            if (answer1 != 0) {
-                interview[i][0] = answer1;
-            }
-            
+            origin = Integer.parseInt(sc.nextLine());                      
 
             System.out.println("Para onde vai? Opções:");
             System.out.println("1. Rio de Janeiro");
@@ -30,23 +27,21 @@ public class exercicio01 {
             System.out.println("3. Juiz de Fora");
             System.out.println("4. Barbacena");
             System.out.print(": ");
-            answer2 = Integer.parseInt(sc.nextLine());
-            if (answer2 != 0) {
-                interview[i][0] = answer2;
-            }
-
+            destin = Integer.parseInt(sc.nextLine());
+            
             System.out.println("Qual o tipo de veículo? Opções:");
             System.out.println("1. Automóvel");
             System.out.println("2. Caminhão");
             System.out.println("3. Ônibus");
             System.out.print(": ");
-            answer3 = Integer.parseInt(sc.nextLine());
-            if (answer3 != 0) {
-                interview[i][0] = answer3;
-            }
-
-            if (answer1 == 0 && answer2 == 0 && answer3 == 0) {
+            vehicle = Integer.parseInt(sc.nextLine());
+            
+            if (origin == 0 && destin == 0 && vehicle == 0) {
                 break;
+            } else if (origin == ) {
+                
+            } else {
+                
             }
 
             i += 1;
