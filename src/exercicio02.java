@@ -6,14 +6,18 @@ public class exercicio02 {
         
         float[][] diarioDeClasse = new float[2000][4];
         int i = 0, loop = 1, index = 0;
-        float maiorMedia = 0;
+        float maiorMedia = 0, flag;
 
         Scanner sc = new Scanner(System.in);
 
         do {
             System.out.println("digite os dados do aluno " + (i+1));
             System.out.print("Nº de matrícula: ");
-            diarioDeClasse[i][0] = Float.parseFloat(sc.nextLine());
+            flag = Float.parseFloat(sc.nextLine());
+            if (flag == 0) {
+                break;
+            }
+            diarioDeClasse[i][0] = flag;
             System.out.print("Sexo (0 para masculino e 1 para feminino): ");
             diarioDeClasse[i][1] = Float.parseFloat(sc.nextLine());
             System.out.print("Nº do curso: ");
